@@ -48,15 +48,21 @@
     #explain h2{
       margin-bottom: 0px;
     }
+    #comment{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   </style>
 </head>
 <body>
   <h1><a href="index.html">3세대 걸그룹</a></h1>
   <div id="menu">
     <ul>
-      <li><a href="1.html">TWICE</a></li>
-      <li><a href="2.html">Red Velvet</a></li>
-      <li><A href="3.html">BLACKPINK</a></li>
+      <script>
+        document.write('<li><a href="1.html">TWICE</a></li>');
+        document.write('<li><a href="2.html">Red Velvet</a></li>');
+        document.write('<li><a href="3.html">BLACKPINK</a></li>');
+      </script>
     </ul>
   </div>
   <div id="grid">
@@ -118,6 +124,20 @@
         <li>제4회 아시아 아티스트 어워즈 [AAA 대상-올해의 노래 <음파음파>]</li>
         <li>제4회 지니뮤직 어워드 [여자 퍼포먼스상]</li>
       </ol>
+      <div id="comment">
+        <p>
+          <div id="disqus_thread"></div>
+          <script>
+              (function() { // DON'T EDIT BELOW THIS LINE
+              var d = document, s = d.createElement('script');
+              s.src = 'https://kpop-girlgroup.disqus.com/embed.js';
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+              })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </p>
+      </div>
     </div>
   </div>
 </body>
